@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css"> 
+    <!-----font awesom cdn font icon css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+         <header>
+            <div class="logo">
+                <i class="fa-solid fa-a"></i>
+                <div class="logo-text">BUNJO IBRAHIM</div>
+            </div>
+            <nav>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="navlinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+         </header>
+         <div class="container">
+            <div class="hero-pic">
+                <img src="Bunjo.jpg" alt="Profile Picture">
+            </div>
+            <div class="hero-text">
+                <h5>Hi I`m <span class="input">IT Manager</span></h5>
+                <h1>Bunjo Ibrahim</h1>
+                <p>Thank you for contacting IT Manager, with expertise in troubleshooting, system administration, and database management. 
+                    I enjoy optimizing IT workflows and improving system performance!
+                </p>
+                <div class="btn-grounp">
+                    <a href="#" class="btn">Download cv</a>
+                    
+                   <p>
+                        <a href="https://wa.me/+256784116809?text=Hello%20Bunjo%2C%20I%20visited%20your%20portfolio!" 
+                           target="_blank" class="whatsapp-btn">
+                           Contact Me on WhatsApp
+                        </a>
+                    </p> 
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                    <!--typed js for typing-->
+                    <script scr="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+                    <script>
+                        //creating button click show hide bav bar
+                        var togglebtn=document.querySelector(".togglebtn");
+                        var nav=document.querySelector(".navlinks");
+                        var links=document.querySelector(".navlinks li");
+
+                        togglebtn.addEventListener("click", function(){
+                            this.classList.toggle("click");
+                            nav.classList.toggle("open");
+                        })
+                        var typed=new typed(".input",{
+                            Strings:["Technical Support","Maintenance and Upkeep","User Support and Training","Web developer"],
+                                typedspeed :70,
+                                backspeed :55,
+                                loop :true  
+                        })
+                    </script> 
+                </div>
+            </div>
+         </div>
+        </div>
+    </div>
+</body>
+</html>
